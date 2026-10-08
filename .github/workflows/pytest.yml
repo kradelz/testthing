@@ -19,4 +19,4 @@ jobs:
       - name: Run pytest
         run: |
           pytest
-          pytest --cov --cov-report term
+          pytest-cov --cov --cov-report term
