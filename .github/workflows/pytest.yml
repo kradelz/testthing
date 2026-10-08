@@ -11,7 +11,7 @@ jobs:
 
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: "3.14"
 
       - name: Install pytest
         run: pip install pytest
@@ -19,4 +19,4 @@ jobs:
       - name: Run pytest
         run: |
           pytest
-          pytest-cov --cov --cov-report term
+          pytest --cov --cov-report term
